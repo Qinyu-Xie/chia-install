@@ -64,6 +64,12 @@ notifications:
   twilio_auth_token: 7dcd7ebf282d1872e4e99de6d3f655ed
   twilio_from_phone: +17183957609
   twilio_to_phone: +8613777285207
+  
+  
+instrumentation:
+  # This setting is here in case you wanted to enable instrumentation using Prometheus.
+  prometheus_enabled: false
+  prometheus_port: 9090
 
 
 progress:
@@ -145,7 +151,7 @@ jobs:
     bitfield: true
     threads: 4
     buckets: 128
-    memory_buffer: 4000
+    memory_buffer: 3800
     max_concurrent: 7
     max_concurrent_with_start_early: 7
     stagger_minutes: 5
@@ -174,7 +180,7 @@ jobs:
     bitfield: true
     threads: 4
     buckets: 128
-    memory_buffer: 4000
+    memory_buffer: 3800
     max_concurrent: 7
     max_concurrent_with_start_early: 7
     stagger_minutes: 5
