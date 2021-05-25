@@ -1,4 +1,6 @@
-sudo apt-get install xserver-xorg-video-dummy
+sudo apt-get install xserver-xorg-video-vesa
+
+Code is in your /usr/share/X11/xorg.conf.d/xorg.conf file or /etc/X11/xorg.conf file
 
 
 
