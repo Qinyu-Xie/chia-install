@@ -3,7 +3,7 @@ sudo apt install nfs-common
 sudo mkdir -p /mnt/nfs_d24_0
 for i in {0..23}
 do
-    sudo mkdir -p /mnt/nfs_clientshare/hdd$i
+    sudo mkdir -p /mnt/nfs_d24_0/hdd$i
 done
 sudo mount 192.168.0.66:/media/qinyu/hdd0  /mnt/nfs_d24_0/hdd0
 sudo mount 192.168.0.66:/media/qinyu/hdd1  /mnt/nfs_d24_0/hdd1
